@@ -70,9 +70,63 @@ Open http://127.0.0.1:8000
 python manage.py startapp AppName
 ```
 
-**Tip:** *You can select link (cmd+shift+p) "Select linter" to choose flake8 or other linter*
+**Tip:** *Insall VS Code recomended linter as soon as you open any .py file. You can select link (cmd+shift+p) "Select linter" to choose flake8 or other linter*
 
 ------
+
+Goto AppName/*views.py* and add the following code. Do not delete the existing code
+
+```python
+from django.http.import httpResponse
+
+def index(request):
+
+​    return httpResponse("Hello from Django APP")
+```
+
+In AppName directory, create a new file; name it: urls.py add the following code:
+
+```python
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+
+​    path('', views.index, name='index'),
+
+]
+```
+
+Goto mystie (Project name)/*urls.py*
+
+```python
+from django.urls import include
+
+urlpatterns = [
+
+​    path('mysite/', include('mysite.urls')),
+
+​    path('admin/', admin.site.urls),
+
+]
+```
+
+
+
+Run your app
+
+```python
+python manage.py runserver
+```
+
+Open http://127.0.0.1:8000/AppName
+
+
+
+Tip: Install autopep8 for formatting the code
+
+
 
 Ritesh Gaur
 
