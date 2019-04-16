@@ -36,7 +36,7 @@ Tip: Should be able to see on botton left corner the selected interpreter/env.
 
 ## **Download Django** 
 
-pip install django==2
+pip install django==2.2
 
 django-admin startproject mysite (mysite is name of your project in Django)
 
