@@ -26,23 +26,37 @@ Go to Terminal (Comand line) > Create a folder (`mkdir`) with the name of your p
 
 Open the terminal and type (where env is the name of the virtual envirnoment) 
 
-`python3 -m venv env`
+```python
+python3 -m venv env
 
-`source env/bin/activate`
+source env/bin/activate
+```
 
-Press cmd+Shift+P and select 'env:venv' (venv is the name you have given to virtaul environment )
+Press cmd+Shift+p and select 'env:venv' (venv is the name you have given to virtaul environment )
 
 Tip: Should be able to see on botton left corner the selected interpreter/env. 
 
 ## **Download Django** 
 
+```python
 pip install django==2.2
+```
 
-django-admin startproject mysite (mysite is name of your project in Django)
+Create Project
 
-cd mysite
+For example mysite is name of your project name
 
+```python
+django-admin startproject mysite 
+```
+
+Enter into your project folder/directory
+
+`cd mysite`
+
+```python
 python manage.py runserver
+```
 
 Open http://127.0.0.1:8000
 
@@ -50,7 +64,13 @@ Open http://127.0.0.1:8000
 
 
 
-**Tip:** *You can select link (cmd+Shift+P) "Select linter" to choose flake8 or other linter*
+# Create your APP 
+
+```python
+python manage.py startapp AppName
+```
+
+**Tip:** *You can select link (cmd+shift+p) "Select linter" to choose flake8 or other linter*
 
 ------
 
