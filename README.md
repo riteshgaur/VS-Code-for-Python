@@ -77,11 +77,10 @@ python manage.py startapp AppName
 Goto AppName/*views.py* and add the following code. Do not delete the existing code
 
 ```python
-from django.http.import httpResponse
+from django.http import HttpResponse
 
 def index(request):
-
-​    return httpResponse("Hello from Django APP")
+    return HttpResponse("Hello from Django APP")
 ```
 
 In AppName directory, create a new file; name it: urls.py add the following code:
