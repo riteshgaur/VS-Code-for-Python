@@ -127,5 +127,5 @@ Tip: Install autopep8 for formatting the code
 
 
 
-Ritesh Gaur
+
 
