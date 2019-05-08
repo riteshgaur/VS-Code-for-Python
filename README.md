@@ -5,7 +5,7 @@ Informal document to make the best of your VS Code.
 - Install VS code
 - Install Python extension
 
-- Install dJango template extension
+- Install Django template extension
 
 
 Open terminal (windows>New Terminal)
