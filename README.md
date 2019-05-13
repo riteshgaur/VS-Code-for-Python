@@ -104,7 +104,7 @@ from django.urls import include
 
 urlpatterns = [
 
-​    path('mysite/', include('mysite.urls')),
+​    path('AppName/', include('AppName.urls')),
 
 ​    path('admin/', admin.site.urls),
 
@@ -113,7 +113,31 @@ urlpatterns = [
 
 
 
-Run your app
+**Register your App**
+
+Goto settings (projectname/settings). Under INSTALLED_APPS add your **AppName**
+
+INSTALLED_APPS = [
+
+​    'django.contrib.admin',
+
+​    'django.contrib.auth',
+
+​    'django.contrib.contenttypes',
+
+​    'django.contrib.sessions',
+
+​    'django.contrib.messages',
+
+​    'django.contrib.staticfiles',
+
+​    '**AppName**',
+
+]
+
+
+
+**Run your app**
 
 ```python
 python manage.py runserver
